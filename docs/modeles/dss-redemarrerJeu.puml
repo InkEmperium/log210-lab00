@@ -1,0 +1,12 @@
+@startuml dss-redemarrerJeu.puml
+skinparam style strictuml
+skinparam backgroundcolor transparent
+skinparam SequenceBoxBorderColor transparent
+skinparam participantpadding 10
+'skinparam handwritten true
+skinparam sequenceMessageAlign center
+title DSS pour le scénario Redémarrer 
+actor ":Joueur" as J
+participant ":Système" as b
+J->b: redémarrerJeu()
+@enduml
