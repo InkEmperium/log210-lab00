@@ -24,7 +24,7 @@ describe('GET /api/v1/jeu/redemarrerJeu',()=>{
   it("should create a game", () => {
     expect(jeu).toBeTruthy();
   });
-  it("should create two players", async () => {
+  it("should have players", async () => {
     expect(jeu._joueurs).toBeTruthy();
    });
   it("should call GET /api/v1/jeu/redemarrerJeu", async () => {
