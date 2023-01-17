@@ -53,7 +53,7 @@
         "madge": "^5.0.1",
         "nodemon": "^2.0.16",
         "shx": "^0.3.4",
-        "supertest": "^6.2.3",
+        "supertest": "^6.3.3",
         "tplant": "^3.1.0",
         "ts-jest": "^27.0.7",
         "ts-node": "^10.7.0",
