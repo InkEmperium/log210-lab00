@@ -165,6 +165,8 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 1. Le Joueur demande à redémarrer l'application.
 2. Le Système termine tous les jeux en cours et redémarre l'application.
 
+### Diagramme de classes logicielles
+![Diagramme de classes logicielles](modeles/App.svg)
 ### Diagramme de cas d'utilisation
 ![Diagramme de cas d'utilisation](modeles/dcu.svg)
 

@@ -35,6 +35,7 @@ class JeuDeDes {
     +demarrerJeu(nom: string): string
     +jouer(nom: string): string
     +terminerJeu(nom: string): string
+    +redemarrerJeu(): void
     +brasser(): number
     +joueurs: string
 }
@@ -47,6 +48,7 @@ class JeuRouter {
     +jouer(req: Request<ParamsDictionary, any, any, QueryString.ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction): void
     -_errorCode500(error: any, req: Request<ParamsDictionary, any, any, QueryString.ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>): void
     +terminerJeu(req: Request<ParamsDictionary, any, any, QueryString.ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction): void
+    +redemarrer(req: Request<ParamsDictionary, any, any, QueryString.ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction): void
     +init(): void
 }
 class App {
