@@ -6,7 +6,7 @@ export class De {
     }
 
     public brasser() {
-        this._valeur = Math.floor(Math.random() * 6 + 1);
+        this._valeur = Math.floor(Math.random() * (7-1) + 1);
     }
 
     get valeur() {
