@@ -11,4 +11,6 @@ Mais plus tard dans le semestre, si votre équipe porte votre (manque de) perfor
 
 Mettez votre réponse (environ 300 mots) ci-dessous:
 
+A travers cet extrait, j'ai appris que les problèmes dans une équipe peuvent être causés par des membres qui ne font pas d'effort pour créer un travail de qualité ou qui causent des difficultés. Les exemples donnés dans le texte montrent comment un membre de l'équipe, Jack, a été un mollasson en ne faisant pas sa part des devoirs, en étant absent à chaque réunion, en ne répondant pas aux messages et en soumettant du code qui ne fonctionne pas. Il se plaint également constamment de ses semaines de travail de cinquante heures et de sa lourde charge scolaire, ce qui a fini par énerver les autres membres de l'équipe. Le texte montre également comment il est possible de gérer ces situations en discutant de la situation avec un professeur ou en prenant des mesures pour résoudre les problèmes.
+
 ---
