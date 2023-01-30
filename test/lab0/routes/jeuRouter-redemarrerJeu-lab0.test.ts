@@ -9,17 +9,11 @@ const request = supertest(app);
 let jeu;
 let joueurTest1, joueurTest2
 
-describe('redemarrerJeu.test.ts', () => {
-  it("should implement test", async () => {
-    throw new Error("Ce test n'a pas été défini")
-  });
-});
-
 describe('GET /api/v1/jeu/redemarrerJeu',()=>{
   beforeAll(async()=>{
     jeu = new JeuDeDes();
-    joueurTest1 = JSON.parse(jeu.demarrerJeu("joueur1"));
-    joueurTest2 = JSON.parse(jeu.demarrerJeu("joueur2"));
+    joueurTest1 = JSON.parse(jeu.demarrerJeu("Sam,1"));
+    joueurTest2 = JSON.parse(jeu.demarrerJeu("Ben,2"));
   })
   it("should create a game", () => {
     expect(jeu).toBeTruthy();
@@ -27,9 +21,17 @@ describe('GET /api/v1/jeu/redemarrerJeu',()=>{
   it("should have players", async () => {
     expect(jeu._joueurs).toBeTruthy();
    });
-  it("should call GET /api/v1/jeu/redemarrerJeu", async () => {
-    const response = await request.get('/api/v1/jeu/redemarrerJeu');
+  it("should expect response 200 ", async () => {
+    const response = await request.get('/api/v1/jeu/demarrerJeu/joueurTest1')
+      .then(() => request.get('/api/v1/jeu/redemarrerJeu'));
     expect(response.status).toBe(200);
+    });
+
+  it.only("should expect response 404", async () => {
+    jeu.redemarrerJeu();
+    console.log(jeu._joueurs.length);
+    const response = await request.get('/api/v1/jeu/redemarrerJeu');
+    expect(response.status).toBe(404);
     });
   });
  

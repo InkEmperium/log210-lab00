@@ -24,11 +24,9 @@ export class JeuDeDes {
      */
 
     public demarrerJeu(nom: string): string {
-
         if (this._joueurs.get(nom)) {
             throw new AlreadyExistsError(`Joueur '${nom}' existe déjà.`);
         }
-
         const joueur = new Joueur(nom);
         this._joueurs.set(nom, joueur);
         // ne pas retourner l'objet de la couche domaine
@@ -71,7 +69,7 @@ export class JeuDeDes {
         return JSON.stringify(resultat);
     }
 
-    public redemarrerJeu(): void {
+    public redemarrerJeu() {
         this._joueurs.clear();
     }
     // d'autres méthodes (des RDCU)
